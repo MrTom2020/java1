@@ -1,0 +1,18 @@
+package lethanhhiep_1824801030217_th5;
+
+import javax.swing.JFrame;
+
+public class bai1 extends JFrame
+{
+	public bai1()
+	{
+		super();
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+	public static void main(String[] args) 
+	{
+		bai1 b1 = new bai1();
+		b1.setSize(300,300);
+		
+	}
+}

@@ -1,0 +1,25 @@
+package lethanhhiep_1824801030217_th5;
+
+import java.awt.Color;
+import java.awt.FlowLayout;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class bai3 extends JFrame
+{
+	public bai3()
+	{
+		super();
+		JPanel p = new JPanel();
+		p.setLayout(new FlowLayout());
+		p.setBackground(Color.blue);
+		
+	}
+	public static void main(String[] args)
+	{
+		bai3 b3 = new bai3();
+		b3.setSize(500,500);
+		b3.setVisible(true);
+	}
+}

@@ -1,0 +1,54 @@
+package lethanhhiep_1824801030217_th5;
+
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.Frame;
+import java.awt.Label;
+import java.awt.TextArea;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+public class bai3 extends Frame implements ActionListener
+{
+	private Button btn1;
+	private TextArea txt;
+	private Label lb;
+	
+	public bai3()
+	{
+		txt = new TextArea();
+		txt.setBounds(50,50,200,40);
+		lb = new Label();
+		lb.setBounds(200,200,400,60);
+		btn1 = new Button("ADD");
+		btn1.setBounds(100,150,40,60);
+		btn1.addActionListener(this);
+		add(txt);
+		add(lb);
+		add(btn1);
+		setSize(1500,1550);
+		setLayout(null);
+		setVisible(true);
+	}
+	public static void main(String[] args)
+	{
+		new bai3();
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) 
+	{
+		// TODO Auto-generated method stub
+		String ttt = txt.getText();
+		JButton bt = new JButton(ttt);
+		bt.setBounds(160,200,50,100);
+		add(bt);
+		
+	}
+}

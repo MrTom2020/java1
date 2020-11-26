@@ -1,0 +1,50 @@
+package lethanhhiep_1824801030217_th5;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+public class bai3 extends JFrame
+{
+	public bai3()
+	{
+		super();
+		JPanel p = new JPanel();
+		//p.setSize(500, 600);
+		p.setLayout(new FlowLayout());
+		p.setBackground(Color.blue);
+		//JTextArea txt = new JTextArea();
+		//p.add(txt);
+		JButton btn = new JButton("ADD");
+		JTextArea txt = new JTextArea(40,30);
+		txt.setBounds(10,10,40,30);
+		btn.setBounds(100, 150,40, 50);
+		p.add(txt);
+		p.add(btn);
+		btn.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				// TODO Auto-generated method stub
+				JButton btn1 = new JButton(txt.getText().toString());
+				p.add(btn1);
+			}
+		});
+		Container con = getContentPane();
+		con.add(p);
+	}
+	public static void main(String[] args)
+	{
+		bai3 b3 = new bai3();
+		b3.setSize(1500,600);
+		b3.setVisible(true);
+	}
+}

@@ -1,0 +1,37 @@
+package lethanhhiep_1824801030217_th5;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+public class bai3 extends JFrame
+{
+	public bai3()
+	{
+		super();
+		JPanel p = new JPanel();
+		p.setSize(500, 600);
+		p.setLayout(new FlowLayout());
+		p.setBackground(Color.blue);
+		//JTextArea txt = new JTextArea();
+		//p.add(txt);
+		JButton btn = new JButton("hihihihihihi");
+		JTextArea txt = new JTextArea();
+		txt.setBounds(100,50,100,40);
+		p.add(txt);
+		//p.add(btn);
+		Container con = getContentPane();
+		con.add(p);
+	}
+	public static void main(String[] args)
+	{
+		bai3 b3 = new bai3();
+		b3.setSize(500,500);
+		b3.setVisible(true);
+	}
+}
